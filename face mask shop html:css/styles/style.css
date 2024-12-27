@@ -1,0 +1,1117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.HomePage{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* navbar start */
+.NavBar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #FFFFFF;
+}
+.BurgerIcon{
+    display: none;
+}
+.Srch{
+    display: flex;
+    gap: 40px;
+}
+
+.LogIn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.LogIn svg{
+    width: 26px;
+    height: 26px;
+}
+.Cart svg{
+    width: 26px;
+    height: 28px;
+}
+.Cart text{
+    font-size: 90px;
+    font-family: "Quicksand", sans-serif;
+}
+.LogIn a{
+    font-size: 15px;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+}
+.Cart{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li .DropDown{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-15%);
+    z-index: 999;
+    display: none;
+    width: 75px;
+    height: 60px;
+}
+ul li:hover .DropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.Links{
+    display: flex;
+    gap: 25px;
+}
+.Links a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.Links a:hover{
+    color: #0A20DB;
+}
+.PageName a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    color: black;
+    
+}
+
+.Shearch input{
+    width: 185px;
+    height: 39px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #7F7F7F;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+.Shearch{
+    position: relative;
+}
+.Shearch svg{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 3px;
+    top: 30%;
+    
+}
+.Shearch input:hover{
+    border: 2px solid black;
+}
+/* navbar end */
+.Container{
+    width: 100%;
+}
+
+/* page container */
+.PageContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+/* pagecontainer */
+
+
+/* banner start */
+.Back{
+    width: 100%;
+    padding: 0 30px;
+}
+.BannerImg{
+    width: 100%;
+}
+.Bannertxt{
+    background-image: url(https://static.wixstatic.com/media/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg/v1/fill/w_2720,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.BannertxtMob{
+    display: none;
+    
+}
+.BannerText p{
+    color: black;
+    font-size: 68px;
+    font-family: "Quicksand", sans-serif;
+    
+}
+.BannerBtn button{
+    width: 144px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #0A20DB;
+    color: #0A20DB;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition-property: background-color,color;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.BannerBtn button:hover{
+    background-color: #0A20DB;
+    color: white;
+}
+/* banner end */
+
+/* homepage start */
+.Title p{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 28px;
+    color: #0A20DB;
+    font-family: "Quicksand", sans-serif;
+
+}
+.ImgBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
+.ImgBox img{
+    width: 307px;
+    height: 410px;
+}
+.Img1{
+    border: 1px solid #E3E3E3;
+}   
+.Img2{
+    border: 1px solid #E3E3E3;
+}
+.Img3{
+    border: 1px solid #E3E3E3;
+}
+.Img4{
+    border: 1px solid #E3E3E3;
+}
+.Imgs{
+    width: 308px;
+    height: 410px;
+    position: relative;
+ 
+}
+.Imgs:hover .tx{
+    height: 45px;
+    opacity: 1;
+}
+.Imgs img{
+    width: 100%;
+    height: 100%;
+}
+.z{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.1s;
+}
+.z:hover{
+    opacity: 1;
+}
+
+.tx p{
+    font-family: "Quicksand", sans-serif;
+}
+.tx{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+}
+
+
+
+.ImgTextBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 10px 10px;
+}
+.ImgTextBox p{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.ImgTextBox .p2{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+.Btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.Btn button{
+    width: 144px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #0A20DB;
+    border-radius: 4px;
+    color: #0A20DB;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    transition-property: background-color,color;
+    transition-duration: 0.4s;
+}
+.Btn button:hover{
+    background-color: #0A20DB;
+    color: white;
+}
+/* homepage end */
+
+
+/* homepagesecond start */
+.Title p{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 28px;
+    color: #0A20DB;
+    font-family: "Quicksand", sans-serif;
+
+}
+.StyledImgBox{
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+.Box1{
+    background-color: #FDF8EC;
+    width: 423px;
+    height: 480px;
+}
+.Box2{
+    background-color: #FD9C7A;
+    width: 423px;
+    height: 480px;
+}
+.Box3{
+    background-color: #FDF8EC;
+    width: 423px;
+    height: 480px;
+}
+.Txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 20px;
+}
+.Txt .p1{
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+.Txt p{
+    text-align: center;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.Txt svg{
+    width: 125px;
+    height: 145px;
+    
+}
+/* homepagesecond end */
+
+
+/* homepagethree start */
+.Title p{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 28px;
+    color: #0A20DB;
+    font-family: "Quicksand", sans-serif;
+
+}
+.TwoBox{
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+.BoxOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 190px;
+    width: 660px;
+    height: 680px;
+    background-color: #D9EBFF;
+    line-height: 30px;
+}
+.BoxOne p{
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+.BoxTwo img{
+    width: 660px;
+    height: 680px;
+}
+/* homepagethree end */
+
+
+/* homepagefour start */
+.Page4{
+    width: 100%;
+    padding: 0 35px;
+}
+.Title p{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 28px;
+    color: #0A20DB;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+.ImageBox .Images{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    height: 644px;
+    background-color: #FDF8EC;
+    padding: 50px 35px 0 35px;
+}
+
+.ItImg{
+    width: 240px;
+    height: 240px;
+    position: relative;
+}
+.ItImg img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.ItImg:hover .It{
+    opacity: 1;
+}
+.It{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(83, 83, 83, 0.263);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    text-align: center;
+}
+.It a{
+    color: rgb(10, 31, 219);
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+/* homepagefour end */
+
+
+/* lasthomepage start */
+.Page5 .LastContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px 0 30px;
+    width: 100%;
+    justify-content: center;
+}
+.Visage{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.Visage p{
+    font-size: 24px;
+    font-family:"Quicksand", sans-serif;
+}
+.Shop{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.TxtTitle p{
+    font-size: 28px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+.Policy{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.ContactUs{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.List a{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.List p{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.MetaIcons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.MetaIcons i{
+    font-size: 25px;
+}
+.Last{
+    display: flex;
+    justify-content: center;
+}
+.LastTxt{
+    border: 1px solid #C7C7C7;
+    border-top: none;
+    width: 1348px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "Quicksand", sans-serif;
+}
+.LastTxt p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.LastTxt a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
+}
+.VsgInside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+/* lasthomepage end */
+
+
+
+
+/* Responsive high resulution */
+
+@media (min-width:1780px){
+    /* ShopImages */
+    .Imgs img{
+        width: 100%;
+        height: auto;
+    }
+    .Imgs{
+        width: 427px;
+        height: 600px;
+        position: relative;
+     
+    }
+    .ImgBox img{
+        width: 427px;
+        height: auto;
+    }
+    .Imgs:hover .tx{
+        height: 45px;
+        opacity: 1;
+    }
+    /* ShopImagesEnd */
+
+    /* StyledBoxes */
+    .StyledImgBox{
+        display: flex;
+        gap: 40px;
+        width: 100%;
+    }
+    .Box1{
+        background-color: #FDF8EC;
+        width: 582px;
+        height: 480px;
+    }
+    .Box2{
+        background-color: #FD9C7A;
+        width: 582px;
+        height: 480px;
+    }
+    .Box3{
+        background-color: #FDF8EC;
+        width: 582px;
+        height: 480px;
+    }
+    /* StyledBoxesEnd */
+
+
+    .BoxOne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 190px;
+        width: 900px;
+        height: 680px;
+        background-color: #D9EBFF;
+        line-height: 30px;
+    }
+    .BoxTwo img{
+        width: 900px;
+        height: 680px;
+    }
+
+
+
+
+    
+    .ImageBox .Images{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+        padding-top: 80px;
+        height: 924px;
+        
+    }
+    
+    .ItImg{
+        width: 360px;
+        height: 360px;
+        position: relative;
+    }
+
+
+
+
+    .Visage{
+        width: 457px;
+        height: 398px;
+    }
+    .Shop{
+        width: 457px;
+        height: 398px;
+    }
+    .Policy{
+        width: 457px;
+        height: 398px;
+    }
+    .ContactUs{
+        width: 457px;
+        height: 398px;
+        padding: 0;
+    }
+    .LastTxt{
+        width: 1840px;
+        height: 55px;
+    }
+}
+
+/* Responsive high resulution end */
+/* mobile version responsive */
+@media screen and (max-width:500px) {
+    .NavBar nav{
+        height: 146px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .BurgerIcon{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .BurgerIcon .Line1{
+        width: 22px;
+        height: 2px;
+        background-color: black;
+    }
+    .Shearch{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    .Shearch svg{
+        display: none;
+        
+    }
+    .Shearch input{
+        width: 280px;
+        height: 42px;
+    }
+    .NavBar .Links{
+    display: none;
+   }
+   .NavBar .LogIn{
+    display: none;
+   }
+   .Bannertxt{
+    background-image: url(https://static.wixstatic.com/media/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg/v1/fill/w_640,h_680,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+    padding-left: 20px;
+   }
+   .Bannertxt p{
+    font-size: 38px;
+    width: 172px;
+   }
+   .BannerBtn button{
+    width: 104px;
+    height: 32px;
+   }
+
+
+   .ImgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .Imgs img{
+    width: 100%;
+    height: 370px;
+   }
+   .Imgs{
+       width: 278px;
+       height: auto;
+       position: relative;
+    
+   }
+
+   .Imgs:hover .tx{
+       height: 35px;
+       opacity: 1;
+   }
+   .Title p{
+    font-size: 20px;
+   }
+   .Btn button{
+    width: 104px;
+    height: 32px;
+   }
+
+
+
+   .StyledImgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .Box1{
+    width: 320px;
+    height: 321px;
+   }
+   .Box2{
+    width: 320px;
+    height: 321px;
+   }
+   .Box3{
+    width: 320px;
+    height: 321px;
+   }
+   .Txt svg{
+    width: 100px;
+    height: 107px;
+   }
+   .Txt p1{
+    font-size: 17px;
+   }
+   .Txt p{
+    font-size: 13px;
+   }
+
+
+   .TwoBox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+   }
+   .BoxOne{
+    width: 320px;
+    height: 320px;
+    padding: 30px;
+    text-align: center;
+   }
+   .BoxOne p{
+    font-size: 15px;
+    line-height: 25px;
+   }
+   .BoxTwo img{
+    width: 320px;
+    height: 320px;
+   }
+   
+
+   .ItImg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+   }
+   
+   .ImageBox .Images{
+       display: flex;
+       width: 100%;
+       padding: 0 0 20px 0;
+       flex-wrap: wrap;
+       height: 100%;
+       gap: 20px;
+       
+   }
+   
+   
+   .Page5 .LastContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+   }
+   .Visage{
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-top: 1px solid #C7C7C7;
+    }
+    .Visage p{
+        font-size: 16px;
+    }
+    .Shop{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .Policy{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .ContactUs{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .LastTxt{
+        width: 100%;
+        height: 89px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .List{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+   .TxtTitle p{
+    font-size: 20px;
+   }
+   .TxtTitle a{
+    font-size: 13px;
+   }
+   .Back{
+    padding: 0;
+   }
+
+}
+
+@media screen and (max-width:800px){
+    .NavBar nav{
+        height: 146px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .BurgerIcon{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .BurgerIcon .Line1{
+        width: 22px;
+        height: 2px;
+        background-color: black;
+    }
+    .Shearch{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    .Shearch svg{
+        display: none;
+        
+    }
+    .Shearch input{
+        width: 400px;
+        height: 42px;
+    }
+    .NavBar .Links{
+    display: none;
+   }
+   .NavBar .LogIn{
+    display: none;
+   }
+
+   .Bannertxt{
+    background-image: url(https://static.wixstatic.com/media/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg/v1/fill/w_640,h_680,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5743b5_2661f76c3b8b451e94e7d18e03a64176~mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+    padding-left: 20px;
+   }
+   .Bannertxt p{
+    font-size: 50px;
+    width: 172px;
+   }
+   .BannerBtn button{
+    width: 120px;
+    height: 40px;
+   }
+
+
+   .ImgBox{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+   }
+   .Imgs img{
+    width: 100%;
+    height: 370px;
+   }
+   .Imgs{
+       width: 278px;
+       height: auto;
+       position: relative;
+    
+   }
+
+   .Imgs:hover .tx{
+       height: 35px;
+       opacity: 1;
+   }
+   .Title p{
+    font-size: 20px;
+   }
+   .Btn button{
+    width: 104px;
+    height: 32px;
+   }
+
+
+
+   .StyledImgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .Box1{
+    width: 440px;
+    height: 441px;
+   }
+   .Box2{
+    width: 440px;
+    height: 441px;
+   }
+   .Box3{
+    width: 440px;
+    height: 441px;
+   }
+   .Txt svg{
+    width: 100px;
+    height: 107px;
+   }
+   .Txt p1{
+    font-size: 23px;
+   }
+   .Txt p{
+    font-size: 16px;
+   }
+
+
+   .TwoBox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+   }
+   .BoxOne{
+    width: 520px;
+    height: 520px;
+    padding: 30px;
+    text-align: center;
+   }
+   .BoxOne p{
+    font-size: 15px;
+    line-height: 25px;
+   }
+   .BoxTwo img{
+    width: 520px;
+    height: 520px;
+   }
+   
+
+   .ItImg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+   }
+   
+   .ImageBox .Images{
+       display: flex;
+       width: 100%;
+       padding: 0 0 20px 0;
+       flex-wrap: wrap;
+       height: 100%;
+       gap: 20px;
+       
+   }
+   
+   
+   
+   .Visage{
+    width: 150px;
+    height: 260px;
+}
+.Shop{
+    width: 150px;
+    height: 260px;
+}
+.Shop p{
+    font-size: 24px;
+}
+.Shop a{
+    font-size: 16px;
+}
+.Policy{
+    width: 150px;
+    height: 260px;
+}
+.Policy p{
+    font-size: 24px;
+}
+.Policy a{
+    font-size: 16px;
+}
+.ContactUs{
+    width: 150px;
+    height: 260px;
+    padding: 0;
+}
+.TxtTitle p{
+    font-size: 24px;
+}
+.LastTxt{
+    width: 600px;
+    height: 55px;
+}   
+}

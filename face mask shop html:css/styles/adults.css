@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar start */
+.NavBar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #FFFFFF;
+}
+
+.Srch{
+    display: flex;
+    gap: 40px;
+}
+
+.LogIn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.LogIn svg{
+    width: 26px;
+    height: 26px;
+}
+.Cart svg{
+    width: 26px;
+    height: 28px;
+}
+.Cart text{
+    font-size: 90px;
+    font-family: "Quicksand", sans-serif;
+}
+.LogIn a{
+    font-size: 15px;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+}
+.Cart{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li .DropDown{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-15%);
+    z-index: 999;
+    display: none;
+    width: 75px;
+    height: 60px;
+}
+ul li:hover .DropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.Links{
+    display: flex;
+    gap: 25px;
+}
+.Links a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.Links a:hover{
+    color: #0A20DB;
+}
+.PageName a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    color: black;
+    
+}
+.BurgerIcon{
+    display: none;
+}
+.Shearch input{
+    width: 185px;
+    height: 39px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #7F7F7F;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+.Shearch{
+    position: relative;
+}
+.Shearch svg{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 3px;
+    top: 30%;
+    
+}
+.Shearch input:hover{
+    border: 2px solid black;
+}
+/* navbar end */
+
+
+/* HomePage Start */
+.PageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 25px;
+}
+.PageTitle{
+    width: 100%;
+    height: 199.5px;
+    background-color: #FDF8EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PageTitle p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 68px;
+    color: #0A20DB;
+    
+}
+
+
+.ImgBox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+    
+}
+.Imgs:hover .tx{
+    height: 45px;
+    opacity: 1;
+}
+.ImgBox{
+    width: 100%;
+}
+.ImgBox img{
+    width: 307px;
+    height: 410px;
+}
+.Img1{
+    border: 1px solid #E3E3E3;
+}   
+.Img2{
+    border: 1px solid #E3E3E3;
+}
+.Img3{
+    border: 1px solid #E3E3E3;
+}
+.Img4{
+    border: 1px solid #E3E3E3;
+}
+.Img5{
+    border: 1px solid #E3E3E3;
+}
+.Img6{
+    border: 1px solid #E3E3E3;
+}
+.Img7{
+    border: 1px solid #E3E3E3;
+}
+.Img8{
+    border: 1px solid #E3E3E3;
+}
+.ImgTextBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 10px 10px;
+}
+.ImgTextBox p{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.ImgTextBox .p2{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+
+.Imgs{
+    width: 308px;
+    height: 410px;
+    position: relative;
+
+}
+.Imgs img{
+    width: 100%;
+    height: 100%;
+}
+.z{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.1s;
+}
+.z:hover{
+    opacity: 1;
+}
+
+.tx p{
+    font-family: "Quicksand", sans-serif;
+}
+.tx{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+}
+.tx:hover{
+   height: 45px;
+   opacity: 1;
+}
+
+
+
+.PageLast .LastContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px 0 30px;
+    width: 100%;
+    justify-content: center;
+}
+.Visage{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.Visage p{
+    font-size: 24px;
+    font-family:"Quicksand", sans-serif;
+}
+.Shop{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.TxtTitle p{
+    font-size: 28px;
+    font-family: "Quicksand", sans-serif;
+    color: #0A20DB;
+}
+.Policy{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+}
+.ContactUs{
+    border: 1px solid #C7C7C7;
+    width: 337px;
+    height: 398px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.List a{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.List p{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+.MetaIcons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.MetaIcons i{
+    font-size: 25px;
+}
+.Last{
+    display: flex;
+    justify-content: center;
+}
+.LastTxt{
+    border: 1px solid #C7C7C7;
+    border-top: none;
+    width: 1348px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "Quicksand", sans-serif;
+}
+.LastTxt p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.LastTxt a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
+}
+.VsgInside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width:1780px){
+    .Imgs img{
+        width: 100%;
+        height: auto;
+    }
+    .Imgs{
+        width: 427px;
+        height: 600px;
+        position: relative;
+     
+    }
+    .ImgBox img{
+        width: 427px;
+        height: auto;
+    }
+    .Imgs:hover .tx{
+        height: 45px;
+        opacity: 1;
+    }
+    .Visage{
+        width: 457px;
+        height: 398px;
+    }
+    .Shop{
+        width: 457px;
+        height: 398px;
+    }
+    .Policy{
+        width: 457px;
+        height: 398px;
+    }
+    .ContactUs{
+        width: 457px;
+        height: 398px;
+        padding: 0;
+    }
+    .LastTxt{
+        width: 1840px;
+        height: 55px;
+    }   
+}
+
+@media screen and (max-width:500px){
+    .NavBar nav{
+        height: 146px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .BurgerIcon{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .BurgerIcon .Line1{
+        width: 22px;
+        height: 2px;
+        background-color: black;
+    }
+    .Shearch{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    .Shearch svg{
+        display: none;
+        
+    }
+    .Shearch input{
+        width: 400px;
+        height: 42px;
+    }
+    .NavBar .Links{
+    display: none;
+   }
+   .NavBar .LogIn{
+    display: none;
+   }
+   
+   .PageTitle{
+    height: 80px;
+   }
+   .PageTitle p{
+    font-size: 28px;
+   }
+
+
+   .ImgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .Imgs img{
+    width: 100%;
+    height: 370px;
+   }
+   .Imgs{
+       width: 278px;
+       height: auto;
+       position: relative;
+    
+   }
+
+   .Imgs:hover .tx{
+       height: 35px;
+       opacity: 1;
+   }
+   .Title p{
+    font-size: 20px;
+   }
+
+   .PageLast .LastContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .Visage{
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-top: 1px solid #C7C7C7;
+    }
+    .Visage p{
+        font-size: 16px;
+    }
+    .Shop{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .Policy{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .ContactUs{
+        width: 100%;
+        height: 185px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .LastTxt{
+        width: 100%;
+        height: 89px;
+        border: none;
+        border-top: 1px solid #C7C7C7;
+    }
+    .List{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+   .TxtTitle p{
+    font-size: 20px;
+   }
+   .TxtTitle a{
+    font-size: 13px;
+   }
+   .Back{
+    padding: 0;
+   }
+}
